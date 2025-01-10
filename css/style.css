@@ -234,6 +234,7 @@
 .accordion {
   width: 80%;
   justify-self: center;
+  margin: 0 auto;
 }
 
 .accordion-button {
