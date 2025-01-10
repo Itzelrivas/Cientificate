@@ -166,6 +166,7 @@
   width: 80%;
   display: flex;
   justify-self: center;
+  margin: 0 auto;
 }
   
 .card .card-img-bottom{
@@ -274,4 +275,8 @@
   font-size: 100%;
   color: white;
   margin-bottom: 4%;
+}
+
+.cardsOlimpiada{
+  margin: 0 auto;
 }
