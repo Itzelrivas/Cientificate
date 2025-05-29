@@ -243,6 +243,14 @@
   font-size: 80%;
 }
 
+.materialText{
+  display: flex;
+  justify-content: center;
+  background-color: #68bbbf97;
+  font-weight: bolder;
+  color: #b32451;
+}
+
 /*Olimpiada*/
 
 .bodyOlimpiada {
