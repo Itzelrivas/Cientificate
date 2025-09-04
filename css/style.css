@@ -287,4 +287,117 @@
 
 .cardsOlimpiada{
   margin: 0 auto;
+  padding: 2%;
+}
+
+.botonesOlimpiada{
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    .imgOlimpiada {
+      width: 100%;
+      margin-bottom: 10%;
+    }
+
+    .botonesOlimpiada {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .btn-Exam{
+      width: 100%;
+    }
+    .btn-Practice{
+      width: 100%;
+    }
+    .btn-Notes{
+      width: 100%;
+    }
+}
+
+.btn-Notes{
+  background-color: #ac0f32;
+  font-family: "Letters";
+  font-size: 24px;
+  color: white;
+  padding: 1% 4% 1% 4%;
+}
+
+.btn-Exam{
+  background-color: #7a76a2;
+  font-family: "Letters";
+  font-size: 24px;
+  color: white;
+  padding: 1% 4% 1% 4%;
+}
+
+.btn-Practice{
+  background-color: #68bbbf;
+  font-family: "Letters";
+  font-size: 24px;
+  color: white;
+  padding: 1% 4% 1% 4%;
+}
+
+.imgOlimpiada{
+  width: 70%;
+  margin-left: 15%;
+  margin-bottom: 4%;
+}
+
+/*Geooo*/
+.bodyGeo {
+  background-color: #68bbbf;
+  padding: 2%;
+}
+
+.bodyGeo .titulo {
+  font-family: "Social";
+  text-align: center;
+  font-size: 250%;
+  margin-bottom: 1%;
+  color: white;
+}
+
+/*Números*/
+.bodyNumeros {
+  background-color: #e7bf11;
+  padding: 2%;
+}
+
+.bodyNumeros .titulo {
+  font-family: "Social";
+  text-align: center;
+  font-size: 250%;
+  margin-bottom: 1%;
+  color: white;
+}
+
+/*Combi*/
+.bodyCombi {
+  background-color: #e49bb2;
+  padding: 2%;
+}
+
+.bodyCombi .titulo {
+  font-family: "Social";
+  text-align: center;
+  font-size: 250%;
+  margin-bottom: 1%;
+  color: white;
+}
+
+/*Algebra*/
+.bodyAlgebra {
+  background-color: #8c7f9d;
+  padding: 2%;
+}
+
+.bodyAlgebra .titulo {
+  font-family: "Social";
+  text-align: center;
+  font-size: 250%;
+  margin-bottom: 1%;
+  color: white;
 }
