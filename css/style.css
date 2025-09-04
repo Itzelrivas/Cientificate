@@ -401,3 +401,15 @@
   margin-bottom: 1%;
   color: white;
 }
+
+/*Botón que lleva a las soluciones y tamaño de cards en dispositivos móviles*/
+@media screen and (max-width: 768px) {
+  .btn-primary{
+    padding: 5px 8px; /* botón más pequeño */
+    font-size: 8px;   /* texto más pequeño */
+  }
+
+  .card.w-75 {
+    width: 100% !important; /* más ancha en móviles */
+  }
+}
