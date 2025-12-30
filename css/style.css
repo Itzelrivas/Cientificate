@@ -413,3 +413,114 @@
     width: 100% !important; /* más ancha en móviles */
   }
 }
+
+
+
+
+
+/* Intro oculta por defecto */
+#intro.intro-hidden {
+    opacity: 0 !important;
+    pointer-events: none !important;
+    display: none !important;
+}
+
+/* Intro visible */
+#intro.intro-visible {
+    display: flex !important;
+    opacity: 1 !important;
+}
+
+#intro {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(135deg, #b32451, #68bbbf, #7a76a2, #e49bb2);
+    background-size: 400% 400%;
+    animation: bgMove 8s ease infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999999;
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+/* Fondo dinámico */
+@keyframes bgMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.intro-container {
+    text-align: center;
+}
+
+.intro-title {
+    font-family: "Wonderly";
+    font-size: clamp(2.5rem, 8vw, 6rem);
+    display: inline-block;
+    color: white;
+}
+
+.intro-title span {
+    opacity: 0;
+    display: inline-block;
+    animation: letterPop 0.35s ease forwards;
+}
+
+/* Efecto de cada letra */
+@keyframes letterPop {
+    0% {
+        opacity: 0;
+        transform: translateY(20px) scale(0.8);
+        filter: blur(4px);
+    }
+    60% {
+        opacity: 1;
+        transform: translateY(-5px) scale(1.1);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+        filter: blur(0);
+    }
+}
+
+/* colores individuales tipo arcoíris suave */
+.intro-title span:nth-child(1) { color: #ffffff; }
+.intro-title span:nth-child(2) { color: #ffffff; }
+.intro-title span:nth-child(3) { color: #ffffff; }
+.intro-title span:nth-child(4) { color: #ffffff; }
+.intro-title span:nth-child(5) { color: #ffffff; }
+.intro-title span:nth-child(6) { color: #ffffff; }
+.intro-title span:nth-child(7) { color: #ffffff; }
+.intro-title span:nth-child(8) { color: #ffffff; }
+.intro-title span:nth-child(9) { color: #ffffff; }
+.intro-title span:nth-child(10) { color: #ffffff; }
+.intro-title span:nth-child(11) { color: #ffffff; }
+.intro-title span:nth-child(12) { color: #ffffff; }
+
+/* retraso para que salgan una por una */
+.intro-title span:nth-child(n) {
+    animation-delay: calc(0.15s * var(--i));
+}
+
+/* Subtítulo */
+.intro-sub {
+    margin-top: 20px;
+    font-family: "Letters";
+    font-size: clamp(1.5rem, 4vw, 2rem);
+    color: white;
+    opacity: 0;
+    animation: fadeSub 1.8s ease forwards;
+    animation-delay: 2.5s;
+}
+
+@keyframes fadeSub {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}

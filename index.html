@@ -9,7 +9,39 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="./img/Logo.PNG" type="image/x-icon">
 </head>
+
 <body>
+  <!--
+    <div id="intro" class="intro-hidden">
+      <div class="intro-bg"></div>
+
+      <div class="intro-content">
+          <h1 class="intro-title">CIENTIFÍCATE</h1>
+          <p class="intro-sub">Te da la bienvenida...</p>
+      </div>
+    </div>
+  -->
+    <div id="intro" class="intro-hidden">
+      <div class="intro-container">
+        <h1 class="intro-title">
+          <span>C</span>
+              <span>I</span>
+              <span>E</span>
+              <span>N</span>
+              <span>T</span>
+              <span>Í</span>
+              <span>F</span>
+              <span>I</span>
+              <span>C</span>
+              <span>A</span>
+              <span>T</span>
+              <span>E</span>
+          </h1>
+
+          <p class="intro-sub">te da la bienvenida ✨</p>
+      </div>
+  </div>
+
     <div class="container-fluid header">
         <div class="col-2 col-xl-1 header__logo">
             <img src="img/LogoBanner.PNG" alt="logo">
@@ -44,56 +76,84 @@
             </div>
         </div>
 
-        <div class="pfini" data-aos="zoom-in" data-aos-duration="1000">
-            <p>Cientifícate es un sitio donde las fórmulas brillan y la ciencia vibra.</p>
+        <div class="col-12 col-xl-6 textReco pfini" data-aos="zoom-in" data-aos-duration="1000">
+            <p>Recomendaciones:</p>
         </div>
+        
+        <div class="container mt-4" style="margin-top: 0%;">
+          <div class="row justify-content-center">
 
-        <div class="col-12 col-xl-6 textReco">
-            <h2>Recomendaciones:</h2>
-        </div>
-
-        <div class="col-12 col-xl-6 carruselInicio" data-aos="flip-left" data-aos-duration="1500">
-            <div id="carouselExampleCaptions" class="carousel slide">
-                <div class="carousel-indicators">
-                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 carruselInicio" data-aos="flip-left" data-aos-duration="1500">
+              <div class="card" style="width: 18rem; background-color: #035b89; color: white;">
+                <img src="./img/Dios_Libro.webp" class="card-img-top" alt="Libro: Dios, la Ciencia y las Pruebas.">
+                <div class="card-body">
+                  <h3 class="card-title">Libro:</h3>
+                  <h5 class="card-text">
+                    Dios, la Ciencia y las Pruebas.
+                  </h5>
+                  <p class="card-text">
+                    En teoría - Celeste Giardinelli y Almendra Veiga
+                  </p>
+                  <a onclick="window.open('https://www.gandhi.com.mx/dios--la-ciencia--las-pruebas--9786075579191/p');" class="btn btn-primary">Go somewhere</a>
                 </div>
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="img/Dios_Libro.webp" class="d-block w-100" alt="Libro: Dios, la Ciencia y las Pruebas." onclick="window.open('https://www.gandhi.com.mx/dios--la-ciencia--las-pruebas--9786075579191/p');">
-                    <div class="carousel-caption d-none d-md-block">
-                      <h5>Recomendación de libro:</h5>
-                      <p>Dios. La ciencia. Las pruebas - Michel Yves Bollore y Oliver Bonnassies</p>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <a href="http://www.youtube.com/@enteoriaok" target="_blank">
-                      <img src="img/EnTeoria_Banner.jpg" class="d-block w-100" alt="Podcast: En teoría">
-                    </a>
-                    <div class="carousel-caption d-none d-md-block">
-                      <h5>Recomendación de podcast:</h5>
-                      <p>En teoría - Celeste Giardinelli y Almendra Veiga</p>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <img src="..." class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                      <h5>Third slide label</h5>
-                      <p>Some representative placeholder content for the third slide.</p>
-                    </div>
-                  </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
               </div>
+            </div>
+
+            <!-- CARD 2 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 carruselInicio"
+                data-aos="flip-left" data-aos-duration="1500">
+              <div class="card" style="width: 18rem; background-color: #5b723d; color: white;">
+                <img src="./img/EnTeoria_Banner.jpg" class="card-img-top" alt="Podcast: En teoría.">
+                <div class="card-body">
+                  <h3 class="card-title">Podcast:</h3>
+                  <h5 class="card-text">
+                    En teoría - Celeste Giardinelli y Almendra Veiga
+                  </h5>
+                  <p class="card-text">
+                    En teoría - Celeste Giardinelli y Almendra Veiga
+                  </p>
+                  <a onclick="window.open('https://www.youtube.com/@enteoriaok');" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- CARD 3 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 carruselInicio"
+                data-aos="flip-left" data-aos-duration="1500">
+              <div class="card" style="width: 18rem; background-color: #ac0f32; color: white;">
+                <img src="./img/Victor_Rondon.jpg" class="card-img-top" alt="Victor Rondón">
+                <div class="card-body">
+                  <h3 class="card-title">Creador de contenido:</h3>
+                  <h5 class="card-text">
+                    Victor Rondón
+                  </h5>
+                  <p class="card-text">
+                    Si el mundo del automovilismo te gusta, no te puedes perder todos los Reels.
+                  </p>
+                  <a onclick="window.open('https://www.instagram.com/victor_rondon_?igsh=ZDQ0YjJkYzI5MjQw&utm_source=qr');" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- CARD 4 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 carruselInicio"
+                data-aos="flip-left" data-aos-duration="1500">
+              <div class="card" style="width: 18rem; background-color: #5b5062; color: white;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title 4</h5>
+                  <p class="card-text">
+                    Texto de ejemplo para la card 4.
+                  </p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
         </div>
+        
+
     </div>
 
     <footer>
@@ -107,5 +167,74 @@
 <script>
     AOS.init();
 </script>
+<!-- Intro JS 
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const introShown = localStorage.getItem("introShown");
+    const intro = document.getElementById("intro");
+
+    // SI YA LO VIO → JAMÁS LO MUESTRES
+    if (introShown) {
+        intro.classList.add("intro-hidden");
+        return; // ⬅ IMPORTANTE
+    }
+
+    // SI ES LA PRIMERA VEZ → MUESTRA INTRO
+    intro.classList.remove("intro-hidden");
+    intro.classList.add("intro-visible");
+
+    const DURACION = 6000;
+
+    // Fadear
+    setTimeout(() => {
+        intro.style.opacity = "0";
+
+        setTimeout(() => {
+            intro.classList.add("intro-hidden");
+            intro.classList.remove("intro-visible");
+        }, 1200);
+
+    }, DURACION);
+
+    localStorage.setItem("introShown", "true");
+});
+</script>
+-->
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const introShown = localStorage.getItem("introShown");
+    const intro = document.getElementById("intro");
+    const letters = intro.querySelectorAll(".intro-title span");
+
+    // SI YA LO VIO → jamás muestras intro
+    if (introShown) {
+        intro.classList.add("intro-hidden");
+        return;
+    }
+
+    // Asignar delays dinámicamente a cada letra
+    letters.forEach((span, i) => {
+        span.style.setProperty("--i", i);
+    });
+
+    intro.classList.add("intro-visible");
+
+    // Duración total de la animación (ajustable)
+    const DURACION = 6500;
+
+    setTimeout(() => {
+        intro.style.opacity = "0";
+
+        setTimeout(() => {
+            intro.classList.remove("intro-visible");
+            intro.classList.add("intro-hidden");
+        }, 1200);
+
+    }, DURACION);
+
+    localStorage.setItem("introShown", "true");
+});
+</script>
+
 </body>
 </html>
