@@ -11,36 +11,26 @@
 </head>
 
 <body>
-  <!--
-    <div id="intro" class="intro-hidden">
-      <div class="intro-bg"></div>
-
-      <div class="intro-content">
-          <h1 class="intro-title">CIENTIFÍCATE</h1>
-          <p class="intro-sub">Te da la bienvenida...</p>
-      </div>
-    </div>
-  -->
+    <!--Intro para nuevos usuarios-->
     <div id="intro" class="intro-hidden">
       <div class="intro-container">
         <h1 class="intro-title">
           <span>C</span>
-              <span>I</span>
-              <span>E</span>
-              <span>N</span>
-              <span>T</span>
-              <span>Í</span>
-              <span>F</span>
-              <span>I</span>
-              <span>C</span>
-              <span>A</span>
-              <span>T</span>
-              <span>E</span>
-          </h1>
-
-          <p class="intro-sub">te da la bienvenida ✨</p>
+          <span>I</span>
+          <span>E</span>
+          <span>N</span>
+          <span>T</span>
+          <span>Í</span>
+          <span>F</span>
+          <span>I</span>
+          <span>C</span>
+          <span>A</span>
+          <span>T</span>
+          <span>E</span>
+        </h1>
+        <p class="intro-sub">te da la bienvenida ✨</p>
       </div>
-  </div>
+    </div>
 
     <div class="container-fluid header">
         <div class="col-2 col-xl-1 header__logo">
@@ -80,10 +70,10 @@
         </div>
         
         <div class="container mt-4" style="margin-top: 0%;">
-          <div class="row justify-content-center">
-
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3 carruselInicio" data-aos="flip-left" data-aos-duration="1500">
-              <div class="card" style="width: 18rem; background-color: #035b89; color: white;">
+          <div class="row justify-content-center g-4">
+            <!-- Libro -->
+            <div class="col-12 col-sm-6 col-md-6 col-lg-3 carruselInicio" data-aos="flip-left" data-aos-duration="1500">
+              <div class="card h-100 w-100" style="background-color: #035b89; color: white;">
                 <img src="./img/Dios_Libro.webp" class="card-img-top" alt="Libro: Dios, la Ciencia y las Pruebas.">
                 <div class="card-body">
                   <h3 class="card-title">Libro:</h3>
@@ -98,10 +88,10 @@
               </div>
             </div>
 
-            <!-- CARD 2 -->
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3 carruselInicio"
+            <!-- Podcast -->
+            <div class="col-12 col-sm-6 col-md-6 col-lg-3 carruselInicio"
                 data-aos="flip-left" data-aos-duration="1500">
-              <div class="card" style="width: 18rem; background-color: #5b723d; color: white;">
+              <div class="card h-100 w-100" style="background-color: #5b723d; color: white;">
                 <img src="./img/EnTeoria_Banner.jpg" class="card-img-top" alt="Podcast: En teoría.">
                 <div class="card-body">
                   <h3 class="card-title">Podcast:</h3>
@@ -116,10 +106,10 @@
               </div>
             </div>
 
-            <!-- CARD 3 -->
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3 carruselInicio"
+            <!-- Creador de contenido -->
+            <div class="col-12 col-sm-6 col-md-6 col-lg-3 carruselInicio"
                 data-aos="flip-left" data-aos-duration="1500">
-              <div class="card" style="width: 18rem; background-color: #ac0f32; color: white;">
+              <div class="card h-100 w-100" style="background-color: #ac0f32; color: white;">
                 <img src="./img/Victor_Rondon.jpg" class="card-img-top" alt="Victor Rondón">
                 <div class="card-body">
                   <h3 class="card-title">Creador de contenido:</h3>
@@ -134,10 +124,10 @@
               </div>
             </div>
 
-            <!-- CARD 4 -->
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3 carruselInicio"
+            <!-- Película -->
+            <div class="col-12 col-sm-6 col-md-6 col-lg-3 carruselInicio"
                 data-aos="flip-left" data-aos-duration="1500">
-              <div class="card" style="width: 18rem; background-color: #5b5062; color: white;">
+              <div class="card h-100 w-100" style="background-color: #5b5062; color: white;">
                 <img src="./img/A Million Miles Away.webp" class="card-img-top" alt="Película A Million Miles Away">
                 <div class="card-body">
                   <h3 class="card-title">Película:</h3>
@@ -169,69 +159,33 @@
 <script>
     AOS.init();
 </script>
-<!-- Intro JS 
-<script>
-  document.addEventListener("DOMContentLoaded", () => {
-    const introShown = localStorage.getItem("introShown");
-    const intro = document.getElementById("intro");
 
-    // SI YA LO VIO → JAMÁS LO MUESTRES
-    if (introShown) {
-        intro.classList.add("intro-hidden");
-        return; // ⬅ IMPORTANTE
-    }
-
-    // SI ES LA PRIMERA VEZ → MUESTRA INTRO
-    intro.classList.remove("intro-hidden");
-    intro.classList.add("intro-visible");
-
-    const DURACION = 6000;
-
-    // Fadear
-    setTimeout(() => {
-        intro.style.opacity = "0";
-
-        setTimeout(() => {
-            intro.classList.add("intro-hidden");
-            intro.classList.remove("intro-visible");
-        }, 1200);
-
-    }, DURACION);
-
-    localStorage.setItem("introShown", "true");
-});
-</script>
--->
+<!-- Script para que funcione la intro -->
 <script>
   document.addEventListener("DOMContentLoaded", () => {
     const introShown = localStorage.getItem("introShown");
     const intro = document.getElementById("intro");
     const letters = intro.querySelectorAll(".intro-title span");
 
-    // SI YA LO VIO → jamás muestras intro
+    //SI YA LO VIO → jamás muestras intro
     if (introShown) {
         intro.classList.add("intro-hidden");
         return;
     }
 
-    // Asignar delays dinámicamente a cada letra
     letters.forEach((span, i) => {
         span.style.setProperty("--i", i);
     });
 
     intro.classList.add("intro-visible");
-
-    // Duración total de la animación (ajustable)
     const DURACION = 6500;
 
     setTimeout(() => {
         intro.style.opacity = "0";
-
         setTimeout(() => {
             intro.classList.remove("intro-visible");
             intro.classList.add("intro-hidden");
         }, 1200);
-
     }, DURACION);
 
     localStorage.setItem("introShown", "true");
